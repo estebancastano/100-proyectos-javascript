@@ -1,0 +1,72 @@
+---
+const { number, title, description, demoLink, codeLink } = Astro.props;
+---
+
+<section class="card">
+    <div class="title-card">
+        <span>#{number}</span>
+        <h2>{title}</h2>
+    </div>
+
+    <p>{description}</p>
+
+    <div class="links">
+        <a href={demoLink} target="_blank" rel="noopener noreferrer"> Demo </a>
+        <a href={codeLink} target="_blank" rel="noopener noreferrer">
+            Código
+        </a>
+    </div>
+</section>
+
+<style>
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 16px;
+        max-width: 400px;
+        background-color: #3b82f6;
+        color: white;
+        text-align: center;
+    }
+
+    .title-card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .title-card span {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+        background-color:#555;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .title-card h2 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .links {
+        margin-top: 12px;
+    }
+
+    .links a {
+        text-decoration: none;
+        color: white;
+        margin-right: 16px;
+    }
+
+    .links a:hover {
+        color: #555;
+    }
+</style>
