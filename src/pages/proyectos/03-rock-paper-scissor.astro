@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/03-rock-paper-scissor.css">
+    <title>Rock, paper or scissors </title>
+</head>
+
+<body>
+    <main>
+        <select id="languageSelector" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
+        <h1 id="title">Rock, paper or scissor</h1>
+        <p class="subtitle" id="subtitle">Choose your weapon:</p>
+        <div class="option-buttons">
+            <button id="rock" onclick="rockPaperScissor('Rock')">🪨Rock</button>
+            <button id="paper" onclick="rockPaperScissor('Paper')">📜Paper</button>
+            <button id="scissor" onclick="rockPaperScissor('Scissor')">✂️Scissors</button>
+        </div>
+
+        <p id="result"></p>
+        <p id="counter">Score: 0</p>
+        <script src="/assets/js/script3.js"></script>
+    </main>
+</body>
+
+</html>
