@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../src/styles/01-guess-the-number.css">
+    <title>Guess the number</title>
+</head>
+
+<body>
+    <main class="main">
+        <select id="languageSelector" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
+        <h1 id="title">Guess the number</h1>
+        <div class="input-form">
+            <span id="confirmation"></span>
+            <input type="text" id="inputNumber" placeholder="Input your number" required>
+            <button id="submitButton" onclick="random()" >Submit</button>
+        </div>
+
+    </main>
+
+</body>
+<script src="/assets/js/script1.js"></script>
+
+</html>
