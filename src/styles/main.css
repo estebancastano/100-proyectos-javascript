@@ -8,11 +8,12 @@ body {
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Diseño responsivo */
     gap: 16px;
     padding: 16px;
     text-align: center;
 }
+
 
 footer{
     display: flex;
