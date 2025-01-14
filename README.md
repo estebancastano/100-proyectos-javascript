@@ -18,24 +18,43 @@ Nuestra misión es construir una comunidad donde los desarrolladores, desde prin
 El repositorio está organizado de la siguiente manera:  
 
 📂 100JSProjects
+
 ├── 📂 .astro/
+
 ├── 📂 .vscode/
+
 ├── 📂 node_modules/
+
 ├── 📂 public/
+
 │ ├── 📂 assets/js/
+
 │ └── 📂 images/
+
 ├── 📂 src/
+
 │ ├── 📂 components/
+
 │ ├── 📂 pages/
+
 │ │ ├── 📂 proyectos/
+
 │ │ │ └── index.astro
+
 ├── 📂 styles/
+
 ├── .gitignore
+
 ├── astro.config.mjs
+
 ├── package-lock.json
+
 ├── package.json
+
 ├── README.md
+
 └── tsconfig.json
+
 
 
 - Todos los proyectos estarán en la carpeta `src/pages/proyectos/`.  
